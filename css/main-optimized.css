@@ -1,0 +1,955 @@
+/* =============================
+   AI SAMURAI - OPTIMIZED MAIN CSS
+   Version: 2.0
+   Description: Optimized styles for AI Samurai website
+================================ */
+
+/* =============================
+   1. RESET & BASE STYLES
+================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    overflow-y: scroll !important;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.6;
+    color: #24293B;
+}
+
+/* =============================
+   2. TYPOGRAPHY
+================================ */
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'BebasNeue', sans-serif;
+    text-transform: uppercase;
+    color: #24293B;
+    opacity: 0.9;
+}
+
+h3 {
+    font-size: 30px;
+    padding-top: 15px;
+    letter-spacing: -1px;
+}
+
+/* =============================
+   3. HEADER & NAVIGATION
+================================ */
+
+header {
+    background-color: #0F0A11;
+    background-attachment: fixed;
+    margin-top: -45px;
+}
+
+.navbar-default {
+    background-color: rgba(16, 16, 16, 0.9);
+    margin: 0;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: #fff !important;
+    font-family: 'BebasNeue', sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #46577A !important;
+    background-color: transparent !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: #fff;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.social-nav a {
+    color: #fff;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.social-nav a:hover {
+    color: #46577A;
+}
+
+/* =============================
+   4. VIDEO SECTION
+================================ */
+
+.video-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+#video-elem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.topheader {
+    display: block;
+    position: relative;
+    color: #ffffff;
+    text-align: center;
+}
+
+.topheader h1 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 90px;
+    margin: 312px 0 20px 0;
+    text-transform: lowercase;
+    font-family: 'SuicideSquadFont', sans-serif;
+}
+
+.topheader h1 a {
+    text-decoration: none;
+    transition: all 0.5s;
+    font-family: 'SuicideSquadFont', sans-serif;
+    text-shadow: 0px 0px 10px #1D242F;
+    color: #fff;
+    animation: neon1 1.8s ease-in-out infinite alternate;
+}
+
+.topheader h1 a:hover {
+    cursor: pointer;
+}
+
+.topheader h2 {
+    color: #fff;
+    font-size: 30px;
+    margin-top: -25px;
+    font-family: 'SuicideSquadFont', sans-serif;
+    text-transform: lowercase;
+    animation: neon2 2.1s ease-in-out infinite alternate;
+}
+
+.topheader button {
+    color: #fff;
+    font-family: "BebasNeue", sans-serif;
+    margin: 3px 0 50px;
+    padding: 0;
+    width: 200px;
+    animation: neon3 2.2s ease-in-out infinite alternate;
+}
+
+.topheader button:hover {
+    cursor: pointer;
+}
+
+/* =============================
+   5. BUTTONS
+================================ */
+
+.buttoncolor, .buttoncolor:active {
+    background-color: #46577A;
+    border: medium none;
+    font-size: 27px;
+    transition: all 0.3s ease;
+}
+
+.buttoncolor:hover {
+    background-color: #546791; 
+    box-shadow: 0 0 10px #93B5FF;
+}
+
+.btn-danger.focus, .btn-danger:focus {
+    box-shadow: none !important;
+}
+
+/* =============================
+   6. ABOUT SECTION
+================================ */
+
+.aboutheader {
+    padding-top: 80px;
+}
+
+.aboutheader h2 {
+    text-transform: uppercase; 
+    font-size: 30px;
+    letter-spacing: -1px;
+    font-family: 'BebasNeue', sans-serif;
+    color: #24293B;
+    opacity: 0.9;
+}
+
+.aboutheader p {
+    margin-top: 10px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+    word-spacing: 2px;
+}
+
+.aboutheader p.lead {
+    font-size: 21px;
+    margin-top: 40px;
+    font-family: "Open Sans", sans-serif;
+    line-height: 1.4;
+}
+
+.aboutheader img {
+    max-width: 100%; 
+    padding-top: 61px;
+}
+
+.aboutheader .text-center img {
+    margin-top: 50px;
+}
+
+/* =============================
+   7. PARTNERS SECTION
+================================ */
+
+.img-responsive2 {
+    max-width: 100%;
+}
+
+.partner-logo {
+    display: inline-block;
+    margin: 10px;
+    transition: transform 0.3s ease;
+}
+
+.partner-logo:hover {
+    transform: scale(1.05);
+}
+
+/* =============================
+   8. SERVICES SECTION
+================================ */
+
+.middle_top {
+    padding-top: 57px;
+    display: block;
+}
+
+.middle_top h2 {
+    font-family: 'BebasNeue', sans-serif;
+    font-weight: bold;
+    color: #24293B;
+    text-transform: uppercase;
+    font-size: 33px;
+}
+
+section.middle_top h2 + p {
+    padding-top: 10px; 
+    max-width: 720px;
+}
+
+.parallax-section {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 80px 0;
+}
+
+.our-service {
+    text-align: center;
+}
+
+.single-service {
+    padding: 30px 20px;
+    margin-bottom: 30px;
+    transition: transform 0.3s ease;
+}
+
+.single-service:hover {
+    transform: translateY(-5px);
+}
+
+.single-service i {
+    font-size: 48px;
+    color: #46577A;
+    margin-bottom: 20px;
+}
+
+.single-service h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.single-service p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* =============================
+   9. CATALOG SECTION
+================================ */
+
+#catalogtext {
+    text-align: center;
+    padding: 60px 0;
+}
+
+.amazing h3 {
+    margin-top: 60px;
+    text-transform: uppercase;
+}
+
+.amazing h5 {
+    font-size: 16px;
+    color: #666;
+    margin-top: 10px;
+}
+
+/* Flip Cards */
+.cover {
+    margin-bottom: 30px;
+}
+
+.flipper {
+    width: 263px;
+    height: 263px;
+    font-size: 13.0846px;
+    perspective: 1052px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+}
+
+.front {
+    transform: rotateY(0deg);
+}
+
+.back {
+    transform: rotateY(180deg);
+    background: rgba(70, 87, 122, 0.9);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.flipper:hover .front {
+    transform: rotateY(180deg);
+}
+
+.flipper:hover .back {
+    transform: rotateY(0deg);
+}
+
+.front img.img-responsive {
+    width: 170px;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.back .icon {
+    width: 100%;
+}
+
+.back h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.back p {
+    font-size: 14px;
+    line-height: 1.4;
+    color: white;
+}
+
+.back a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back a:hover {
+    color: #93B5FF;
+}
+
+/* =============================
+   10. CAROUSEL SECTION
+================================ */
+
+.caruselsec {
+    margin-bottom: 35px;
+    margin-top: 30px;
+}
+
+.chasing img {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.mySlides {
+    display: none;
+    text-align: center;
+}
+
+.mySlides.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}
+
+.dot {
+    height: 12px;
+    width: 12px;
+    margin: 0 4px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+}
+
+.dot.active, .dot:hover {
+    background-color: #46577A;
+}
+
+/* =============================
+   11. PORTFOLIO SECTION
+================================ */
+
+.foto {
+    background: no-repeat center center;
+    background-size: cover;
+    display: block;
+    height: 220px;
+    width: 150px;
+    margin: 0 auto 0 auto;
+    box-shadow: 7px 9px 15px -2px rgba(0,0,0,0.75);
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+.foto:hover {
+    transform: scale(1.05);
+}
+
+.margin_bottom {
+    display: block; 
+    margin-bottom: 42px;
+}
+
+.middle_top a {
+    display: block; 
+    width: 95px;
+    padding: 6px; 
+    background: #4394A1; 
+    border-radius: 14px;
+    color: white;
+    right: 10px;
+    margin: 0 auto 0 auto;
+    box-shadow: 7px 9px 10px -9px rgba(0,0,0,0.75);
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.middle_top a:hover {
+    background-color: #63B4C1;
+    color: white;
+    text-decoration: none;
+}
+
+/* =============================
+   12. FOOTER
+================================ */
+
+footer {
+    background-color: #0E191F;
+    margin-top: 40px;
+    background: #fff url("../img/background_header2.jpg") no-repeat 0px 190px/ cover;
+    background-attachment: fixed;
+}
+
+footer p {
+    color: white; 
+    margin: 30px auto 30px auto;
+}
+
+footer p.maria {
+    width: 500px;
+}
+
+.video-overlay-footer {
+    background-color: rgba(36, 41, 59, 0.4); 
+    padding: 40px 0;
+}
+
+.soc_buttons {
+    padding-bottom: 20px;
+}
+
+.soc_buttons a {
+    font-size: 24px;
+    margin: 0 10px 1px 10px;
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.soc_buttons a:hover {
+    color: #46577A;
+}
+
+/* =============================
+   13. MODAL
+================================ */
+
+.modal h3 {
+    text-align: center; 
+    color: #46577A;
+}
+
+form {
+    display: block; 
+    width: 100%;
+}
+
+input {
+    display: block; 
+    width: 100%; 
+    margin-bottom: 10px; 
+    padding: 12px; 
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    color: #46577A;
+    font-family: 'SolomonSansBlack', sans-serif;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(70, 87, 122, 0.3);
+}
+
+textarea {
+    width: 100%;
+    min-width: 100%; 
+    max-width: 100%;
+    height: 90px; 
+    max-height: 90px; 
+    min-height: 90px; 
+    padding: 12px; 
+    border: none;
+    font-size: 15px;
+    color: #46577A;
+    font-family: 'SolomonSansBlack', sans-serif;
+    border-radius: 5px;
+    resize: vertical;
+    transition: box-shadow 0.3s ease;
+}
+
+textarea:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(70, 87, 122, 0.3);
+}
+
+.butsubmit {
+    background-color: #46577A; 
+    font-weight: bold; 
+    font-size: 18px !important; 
+    border: 1px solid #46577A; 
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.butsubmit:hover {
+    background-color: #5D75A3; 
+    cursor: pointer;
+}
+
+.modal-footer button.butclose {
+    color: #46577A; 
+    font-weight: bold; 
+    font-size: 18px; 
+    border: 1px solid #46577A; 
+    border-radius: 15px;
+    transition: background-color 0.3s ease;
+}
+
+.modal-footer button.butclose:hover {
+    background-color: #fff;
+}
+
+/* =============================
+   14. PLAYER STYLES
+================================ */
+
+#player-container {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 9999;
+    transform: translateY(100%);
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.3);
+}
+
+#player-container.show-player {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
+}
+
+.player-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#player ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#player ul li {
+    display: flex;
+    align-items: center;
+}
+
+#player ul li button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    transition: opacity 0.3s ease;
+}
+
+#player ul li button:hover {
+    opacity: 0.7;
+}
+
+#player ul li button img {
+    width: 24px;
+    height: 24px;
+    filter: invert(1);
+}
+
+.track-progress {
+    flex: 1;
+    margin: 0 20px;
+}
+
+.track-title {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.progress-container {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    background: #46577A;
+    width: 0%;
+    transition: width 0.3s ease;
+}
+
+#global-track-list {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.95);
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 10px;
+    min-width: 300px;
+}
+
+#global-track-list ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#global-track-list ul li button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    color: white;
+    text-align: left;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+#global-track-list ul li button:hover,
+#global-track-list ul li button.current-track {
+    background: #46577A;
+}
+
+/* Область активации плеера */
+.player-hover-area {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    z-index: 91999;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.1), transparent);
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.player-hover-area:hover {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.2), transparent);
+}
+
+/* =============================
+   15. ANIMATIONS
+================================ */
+
+@keyframes neon1 {
+    from {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #0073e6, 0 0 20px #0073e6, 0 0 25px #0073e6, 0 0 30px #0073e6, 0 0 35px #0073e6;}
+    to {text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #0073e6, 0 0 10px #0073e6, 0 0 12.5px #0073e6, 0 0 15px #0073e6, 0 0 17.5px #0073e6;}
+}
+
+@keyframes neon2 {
+    from {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff0080, 0 0 20px #ff0080, 0 0 25px #ff0080, 0 0 30px #ff0080, 0 0 35px #ff0080;}
+    to {text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #ff0080, 0 0 10px #ff0080, 0 0 12.5px #ff0080, 0 0 15px #ff0080, 0 0 17.5px #ff0080;}
+}
+
+@keyframes neon3 {
+    from {text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ff00, 0 0 20px #00ff00, 0 0 25px #00ff00, 0 0 30px #00ff00, 0 0 35px #00ff00;}
+    to {text-shadow: 0 0 2.5px #fff, 0 0 5px #fff, 0 0 7.5px #00ff00, 0 0 10px #00ff00, 0 0 12.5px #00ff00, 0 0 15px #00ff00, 0 0 17.5px #00ff00;}
+}
+
+/* =============================
+   16. RESPONSIVE DESIGN
+================================ */
+
+@media (max-width: 1920px) {
+    header {margin-top: -30px;}
+}
+
+@media (max-width: 1280px) {
+    .topheader h1 {margin-top: 260px;}
+    .topheader button {margin-top: 6px;}
+    header {margin-top: -35px;}
+    .video-section {max-height: 557px;}
+}
+
+@media (max-width: 1100px) {
+    .topheader h1 {margin-top: 140px;}
+    .topheader button {margin-top: 50px;}
+    header {margin-top: -25px;}
+    .video-section {max-height: 450px;}
+}
+
+@media (max-width: 980px) {
+    .topheader h1 {margin-top: 190px; font-size: 70px;}
+    .topheader h2 {font-size: 20px;}
+    .topheader button {margin-top: 20px; font-size: 20px;}
+    header {margin-top: -18px;}
+    .video-section {max-height: 466px;}
+    .front {padding-left: 68px;}
+    .navbar-default {padding: 0px;}
+    .navbar-nav > li > .dropdown-menu {
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    .topheader h1 {margin-top: 138px; font-size: 70px;}
+    .topheader h2 {font-size: 20px;}
+    .topheader button {margin-top: 20px; font-size: 20px;}
+    header {margin-top: -8px;}
+    .video-section {max-height: 380px;}
+    .front {padding-left: 68px;}
+}
+
+@media (max-width: 768px) {
+    .video-section {height: 500px;}
+    video {display: none;}
+    header {
+        background-color: #0F0A11;
+        background: #fff url("../img/background_header2.jpg") no-repeat 0px 0px/ cover;
+    }
+    .topheader h1 a, .topheader h2 {animation: none;}
+    .partner-logo {margin: 0px; float: left; width: 50%;}
+    .navbar-default {background-color: #fff;}
+    
+    /* Player responsive */
+    #player-container #player {
+        margin: 0 auto;
+        max-width: 440px;
+    }
+    #player-container ul li.track-progress {
+        width: 300px;
+    }
+    #global-track-list {
+        margin-left: 26px;
+        width: 300px;
+    }
+    .player-hover-area {
+        height: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    #player-container #player {
+        margin: 0 auto;
+        max-width: 300px;
+    }
+    #player-container ul li.track-progress {
+        width: 160px;
+    }
+    #player-container ul li.track-progress .track-title {
+        font-size: 10px;
+    }
+    #global-track-list {
+        left: 0;
+        margin-left: 0;
+        width: 100%;
+        transform: translateX(0);
+    }
+}
+
+@media (max-width: 360px) {
+    .video-section {height: 320px;}
+    .topheader h1 {font-size: 52px; margin-top: 150px; box-shadow: none;}
+    .topheader h1 a, .topheader h2 {animation: none;}
+    header {
+        background-color: #0F0A11;
+        background: #fff url("../img/background_header2.jpg") no-repeat -277px 0px/ cover;
+    }
+    .navbar-default {background-color: #fff;}
+    
+    .navbar-nav > li > .dropdown-menu {
+        margin-top: 0;
+        margin-left: 13px;
+        border: none;
+        position: relative;
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        top: 0;
+        margin-bottom: 15px;
+        background: transparent;
+    }
+    .navbar-collapse {
+        background: #000000;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 !important;
+        max-height: 80vh;
+    }
+    .dropdown-menu > li > a {
+        color: #aaa;
+    }
+    
+    .topheader button {width: 145px; font-size: 22px;}
+    .topheader .logo img {width: 105px;}
+    .middle_top h2 {font-size: 24px;}
+    h3 {font-size: 23px;}
+    header {background-attachment: scroll;}
+    .middle_top {padding-top: 20px;}
+    .middle_top h2 {margin-bottom: 22px;}
+    p {line-height: 20px;}
+    section#catalog-page .row > div, 
+    section#toolworks-page .row > div, 
+    section#gothic-hybrid-page .row > div {
+        margin-bottom: .8em;
+    }
+}
+
+/* =============================
+   17. UTILITY CLASSES
+================================ */
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+/* =============================
+   END OF OPTIMIZED CSS
+================================ */

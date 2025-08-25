@@ -1,0 +1,87 @@
+@font-face {
+    font-family: 'SolomonSansBlack';
+    src: url('../fonts/Solomon/SolomonSansBlack.eot');
+    src: url('../fonts/Solomon/SolomonSansBlack.eot') format('embedded-opentype'),
+         url('../fonts/Solomon/SolomonSansBlack.woff2') format('woff2'),
+         url('../fonts/Solomon/SolomonSansBlack.woff') format('woff'),
+         url('../fonts/Solomon/SolomonSansBlack.ttf') format('truetype'),
+         url('../fonts/Solomon/SolomonSansBlack.svg#SolomonSansBlack') format('svg');
+}
+
+@font-face {
+    font-family: 'BebasNeue';
+    src: url('../fonts/BebasNeue/BebasNeue.eot');
+    src: url('../fonts/BebasNeue/BebasNeue.eot') format('embedded-opentype'),
+         url('../fonts/BebasNeue/BebasNeue.woff2') format('woff2'),
+         url('../fonts/BebasNeue/BebasNeue.woff') format('woff'),
+         url('../fonts/BebasNeue/BebasNeue.ttf') format('truetype'),
+         url('../fonts/BebasNeue/BebasNeue.svg#BebasNeue') format('svg');
+}
+
+@font-face {
+    font-family: 'SuicideSquadFont';
+    src: url('../fonts/SuicideSquadFont/SuicideSquadFont.eot');
+    src: url('../fonts/SuicideSquadFont/SuicideSquadFont.eot') format('embedded-opentype'),
+         url('../fonts/SuicideSquadFont/SuicideSquadFont.woff2') format('woff2'),
+         url('../fonts/SuicideSquadFont/SuicideSquadFont.woff') format('woff'),
+         url('../fonts/SuicideSquadFont/SuicideSquadFont.ttf') format('truetype'),
+         url('../fonts/SuicideSquadFont/SuicideSquadFont.svg#SuicideSquadFont') format('svg');
+}
+
+/*Neon*/
+
+
+@-webkit-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #7692CD, 0 0 20px #7692CD, 0 0 30px #7692CD, 0 0 40px #2A3449, 0 0 70px #2A3449, 0 0 80px #2A3449, 0 0 100px #2A3449, 0 0 150px #2A3449;
+  }
+  to {
+    text-shadow: 0 0 2px #7692CD, 0 0 5px #7692CD, 0 0 10px #7692CD, 0 0 15px #2A3449, 0 0 20px #2A3449, 0 0 30px #2A3449, 0 0 40px #2A3449, 0 0 50px #2A3449;
+  }
+}
+
+@-moz-keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #7692CD, 0 0 20px #7692CD, 0 0 30px #7692CD, 0 0 40px #2A3449, 0 0 70px #2A3449, 0 0 80px #2A3449, 0 0 100px #2A3449, 0 0 150px #2A3449;
+  }
+  to {
+    text-shadow: 0 0 2px #7692CD, 0 0 5px #7692CD, 0 0 10px #7692CD, 0 0 15px #2A3449, 0 0 20px #2A3449, 0 0 30px #2A3449, 0 0 40px #2A3449, 0 0 50px #2A3449;
+  }
+}
+
+@keyframes neon1 {
+  from {
+    text-shadow: 0 0 10px #7692CD, 0 0 20px #7692CD, 0 0 30px #7692CD, 0 0 40px #2A3449, 0 0 70px #2A3449, 0 0 80px #2A3449, 0 0 100px #2A3449, 0 0 150px #2A3449;
+  }
+  to {
+    text-shadow: 0 0 2px #7692CD, 0 0 5px #7692CD, 0 0 10px #7692CD, 0 0 15px #2A3449, 0 0 20px #2A3449, 0 0 30px #2A3449, 0 0 40px #2A3449, 0 0 50px #2A3449;
+  }
+}
+
+
+@-webkit-keyframes neon2 {
+  from {
+    text-shadow: 0 0 2px #2A3449, 0 0 4px #2A3449, 0 0 8px #2A3449, 0 0 20px #2A3449, 0 0 30px #2A3449;
+  }
+  to {
+    text-shadow: 0 0 1px #7692CD, 0 0 3px #7692CD, 0 0 5px #7692CD, 0 0 7px #2A3449, 0 0 10px #2A3449;
+  }
+}
+
+@-moz-keyframes neon2 {
+  from {
+    text-shadow: 0 0 2px #2A3449, 0 0 4px #2A3449, 0 0 8px #2A3449, 0 0 20px #2A3449, 0 0 30px #2A3449;
+  }
+  to {
+    text-shadow: 0 0 1px #7692CD, 0 0 3px #7692CD, 0 0 5px #7692CD, 0 0 7px #2A3449, 0 0 10px #2A3449;
+  }
+}
+
+@keyframes neon2 {
+  from {
+    text-shadow: 0 0 2px #2A3449, 0 0 4px #2A3449, 0 0 8px #2A3449, 0 0 20px #2A3449, 0 0 30px #2A3449;
+  }
+  to {
+    text-shadow: 0 0 1px #7692CD, 0 0 3px #7692CD, 0 0 5px #7692CD, 0 0 7px #2A3449, 0 0 10px #2A3449;
+  }
+}

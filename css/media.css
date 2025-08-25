@@ -1,0 +1,128 @@
+/*MEDIA FOR VIDEO*/
+@media (max-width: 1920px) {
+	header {margin-top: -30px;}
+}
+@media (max-width: 1280px) {
+	.topheader h1 {margin-top: 260px;}
+	.topheader button {margin-top: 6px;}
+	header {margin-top: -35px;}
+	.video-section {max-height: 557px;}
+}
+@media (max-width: 1100px) {
+	.topheader h1 {margin-top: 140px;}
+	.topheader button {margin-top: 50px;}
+	header {margin-top: -25px;}
+	.video-section {max-height: 450px;}
+}
+
+@media (max-width: 980px) {
+	.topheader h1 {margin-top: 190px; font-size: 70px;}
+	.topheader h2 {font-size: 20px;}
+	.topheader button {margin-top: 20px; font-size: 20px;}
+	header {margin-top: -18px;}
+	.video-section {max-height: 466px;}
+	.front {padding-left: 68px;}
+	.navbar-default {padding: 0px;}
+	.navbar-nav > li > .dropdown-menu {
+    margin-top: 20px;}
+}
+
+@media (max-width: 800px) {
+	.topheader h1 {margin-top: 138px; font-size: 70px;}
+	.topheader h2 {font-size: 20px;}
+	.topheader button {margin-top: 20px; font-size: 20px;}
+	header {margin-top: -8px;}
+	.video-section {max-height: 380px;}
+	.front {padding-left: 68px;}
+}
+
+@media (max-width: 768px) {
+	.video-section {height: 500px;}
+	video {display: none;}
+	header {
+	background-color: #0F0A11;
+	background: #fff url("../img/background_header2.jpg") no-repeat 0px 0px/ cover;}
+	.topheader h1 a, .topheader h2 {animation: none;}
+   .partner-logo {margin: 0px; float: left; width: 50%;}
+   .navbar-default {background-color: #fff;}
+}
+
+@media (max-width: 360px) {
+	.video-section {height: 320px;}
+	.topheader h1 {font-size: 52px; margin-top: 150px; box-shadow: none;}
+	.topheader h1 a, .topheader h2 {animation: none;}
+	header {
+		background-color: #0F0A11;
+		background: #fff url("../img/background_header2.jpg") no-repeat -277px 0px/ cover;
+	}
+	.navbar-default {background-color: #fff;}
+	/* .navbar-default .navbar-nav > li > a {color: black !important;} */
+	  .navbar-nav > li > .dropdown-menu {
+	  	margin-top: 0;
+	  	margin-left: 13px;
+	  	border: none;
+	  	position: relative;
+	  	width: 100%;
+	  	opacity: 1;
+	  	visibility: visible;
+	  	top: 0;
+	  	margin-bottom: 15px;
+	  	background: transparent;
+	  }
+	  .navbar-collapse {
+	  	background: #000000;
+	  	position: absolute;
+	  	left: 0;
+	  	right: 0;
+	  	margin: 0 !important;
+	  	max-height: 80vh;
+	  } 
+
+	  .dropdown-menu > li > a {
+	  	color: #aaa;
+	  }
+	}
+
+
+/*END MEDIA FOR VIDEO*/
+
+@media (max-width: 360px) {
+	.topheader button {width: 145px; font-size: 22px;}
+	.topheader .logo img {width: 105px;}
+	.middle_top h2 {font-size: 24px;}
+	h3 {font-size: 23px;}
+	header {background-attachment: scroll;}
+	.hvr-icon-spin:before {left: 160px;}
+	.middle_top {padding-top: 20px;}
+	.middle_top h2 {margin-bottom: 22px;}
+	p {line-height: 20px;}
+	section#catalog-page .row > div, section#toolworks-page .row > div, section#gothic-hybrid-page .row > div {
+    margin-bottom: .8em;}
+    .front .img-responsive {width: 180px !important;}
+    .modal-body button {padding: 5px; width: 110px;}
+    .navbar-brand {display: inline !important;}
+    .mySlides img {width: 100% !important;}
+    .front .img-responsive {width: 180px !important;}
+    .front {padding-left: 58px;}
+    .caruselsec {margin-bottom: 25px; margin-top: 0px !important;}
+    footer p.maria {width: 100%;}
+    .navbar-default {padding: 4px;}
+    .hvr-icon-pulse:before  {display: none;}
+    video {display: none;}
+    .video-section {height: 380px;}
+    .modal-dialog {margin-top: 56px;}
+    .aboutheader {padding-top: 0px;}
+    .aboutheader p.lead {font-size: 17px; margin-top: 0px;}
+    .partner-logo {margin: 0px; float: left; width: 50%;}
+}
+
+
+@media (max-width: 360px) {
+	.topheader ul {padding: 0px;}
+	.text-right {text-align: center !important;}
+	.topheader h1 {padding: 0px;}
+	.dreamsfall {text-align: center !important;}
+	.next, .prev {display: none;}
+
+}
+

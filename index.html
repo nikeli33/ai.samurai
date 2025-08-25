@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="samurai, n8n, automatization, python, make, LLM" name="keywords"/>
+  <meta content="AI Samurai: автоматизация вашего бизнеса" name="description"/>
+  <!--SEO-optimisation-->
+  <link href="http://dreamsfall.com" rel="canonical"/>
+  <!-- Jetpack Open Graph Tags -->
+  <meta content="website" property="og:type"/>
+  <meta content="AI Samurai: автоматизация вашего бизнеса" property="og:title"/>
+  <meta content="AI Samurai: автоматизация вашего бизнеса" property="og:description"/>
+  <meta content="http://dreamsfall.com/" property="og:url"/>
+  <meta content="AI Samurai" property="og:site_name"/>
+  <meta content="img/promethei.jpg" property="og:image"/>
+  <meta content="1200" property="og:image:width"/>
+  <meta content="900" property="og:image:height"/>
+  <meta content="ru_RU" property="og:locale"/>
+  <meta content="img/promethei.jpg" name="twitter:image"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>
+   AI Samurai - автоматизации для вашего бизнеса
+  </title>
+  <!-- Bootstrap -->
+  <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+  <link href="libs/font-awesome-4.2.0/css/font-awesome.min.css" rel="stylesheet"/>
+  <link href="css/bootstrap.css" rel="stylesheet"/>
+  <!--Main CSS-->
+  <link href="css/fonts.css" rel="stylesheet" type="text/css"/>
+  <link href="css/main.css" rel="stylesheet" type="text/css"/>
+  <link href="css/media.css" rel="stylesheet" type="text/css"/>
+  <!-- Preload critical resources -->
+  <link href="js/jquery.js" rel="preload" as="script">
+  <link href="js/bootstrap.js" rel="preload" as="script">
+  <script src="js/player.js" type="text/javascript">
+  </script>
+  <script type="text/javascript">
+   jQuery(function($) {
+        var
+        opts = {
+          ajaxUrl : '',
+          templateUrl : '',
+          siteUrl : '',
+          isIE : 0,
+          isMobile : 0
+        };
+        site.init(opts);
+        audio.init(opts);
+        paginate.init(opts);
+      });
+  </script>
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+ </head>
+ <body>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" tabindex="-1">
+   <div class="modal-dialog" role="document">
+    <div class="modal-content">
+     <div class="modal-body">
+      <!-- <h3>contact us</h3> -->
+      <h3>
+       Отправить письмо
+      </h3>
+      <p class="text-center">
+       <label>
+        <a href="mailto:ai.samurai88@gmail.com" style="color: #46577A; margin: 0px;">
+          ai.samurai88@gmail.com
+         <i aria-hidden="true" class="fa fa-envelope">
+         </i>
+        </a>
+       </label>
+      </p>
+      <br/>
+      <form action="mail.php" method="POST" name="test">
+       <input name="name" placeholder="Имя" type="text" value=""/>
+       <input name="tel" placeholder="Телефон" type="text"/>
+       <input name="mail" placeholder="Email" type="text"/>
+       <textarea name="area" placeholder="Введите сообщение"></textarea>
+       <!-- <input class="send" type="submit" name="send" value="submit">   -->
+       <div class="modal-footer">
+        <button class="btn btn-default butclose" data-dismiss="modal" type="button">
+         закрыть
+        </button>
+        <button class="btn btn-primary send butsubmit" name="send" type="submit">
+         отправить
+        </button>
+       </div>
+      </form>
+     </div>
+    </div>
+   </div>
+  </div>
+  <!--END of MODAL-->
+  <div class="container-fluid mainnav">
+   <nav class="navbar navbar-default navbar-fixed-top topnav">
+    <div class="container topnav">
+     <!-- Brand and toggle get grouped for better mobile display -->
+     <div class="navbar-header">
+      <button class="navbar-toggle" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" type="button">
+       <span class="sr-only">
+        Toggle navigation
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+       <span class="icon-bar">
+       </span>
+      </button>
+      <a class="navbar-brand" data-target="#bs-example-navbar-collapse-1" data-toggle="collapse" href="#" style="display: none;">
+       menu
+      </a>
+     </div>
+     <!-- Collect the nav links, forms, and other content for toggling -->
+     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+       <li>
+        <a href="#index">
+         О НАС
+        </a>
+       </li>
+       <li class="dropdown">
+        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop1" role="button">
+         УСЛУГИ
+         <span class="caret">
+         </span>
+        </a>
+        <ul aria-labelledby="drop3" class="dropdown-menu">
+         <li>
+          <a href="#">
+           РАЗРАБОТКА
+           <i aria-hidden="true" class="">
+           </i>
+          </a>
+         </li>
+         <li>
+          <a href="#watch">
+           ОБУЧЕНИЕ
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li class="dropdown">
+        <a aria-expanded="false" aria-haspopup="true" class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop2" role="button">
+         Магазин
+         <span class="caret">
+         </span>
+        </a>
+        <ul aria-labelledby="drop3" class="dropdown-menu">
+         <li>
+          <a href="#">
+           АВТОМАТИЗАЦИЯ N8N
+          </a>
+         </li>
+         <li>
+          <a href="#">
+           СКРИПТЫ PYTHON
+          </a>
+         </li>
+        </ul>
+       </li>
+       <li>
+        <a href="#contact">
+         ВЫГОДА
+        </a>
+       </li>
+       <li>
+        <a href="#contact">
+         КОНТАКТЫ
+        </a>
+       </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right social-nav">
+       <li>
+        <a href="https://t.me/ai_samurai_studio" target="_blank" aria-label="Telegram">
+         <i class="fa fa-paper-plane"></i>
+        </a>
+       </li>
+       <li>
+        <a href="https://www.youtube.com/@ai.samurai.studio" target="_blank" aria-label="YouTube">
+         <i class="fa fa-youtube-play"></i>
+        </a>
+       </li>
+       <li>
+        <a href="https://vk.com/ai_samurai_studio?from=groups" target="_blank" aria-label="VK">
+         <i class="fa fa-vk"></i>
+        </a>
+       </li>
+      </ul>
+     </div>
+     <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+   </nav>
+  </div>
+  <!-- Область активации плеера при наведении -->
+  <div class="player-hover-area"></div>
+  
+  <div class="add-background" id="player-container">
+   <div class="player-inner">
+    <div id="player">
+     <ul class="clearfix">
+      <li class="prev">
+       <button id="player-prev">
+        <img alt="Previous" src="img/player/icon-prev.svg"/>
+       </button>
+      </li>
+      <li class="play">
+       <button id="player-play">
+        <img alt="Play" class="play-icon" src="img/player/icon-play.svg"/>
+        <img alt="Pause" class="pause-icon" src="img/player/icon-pause.svg"/>
+       </button>
+      </li>
+      <li class="next">
+       <button id="player-next">
+        <img alt="Previous" src="img/player/icon-next.svg"/>
+       </button>
+      </li>
+      <li class="track-progress">
+       <span class="track-title">
+        AI Samurai - Name
+       </span>
+       <div class="progress-container">
+        <div class="progress-bar">
+        </div>
+       </div>
+      </li>
+      <li class="playlist">
+       <button class="" id="trigger-playlist">
+        <img alt="Previous" src="img/player/icon-tracklist.svg"/>
+       </button>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </div>
+  <div id="global-track-list" style="display: none;">
+   <ul>
+    <li>
+     <button class="current-track" data-track-id="21474836470" data-track-title="AI Samurai - Guanxi" data-track-url="mp3/Guanxi.mp3">
+      AI Samurai - Guanxi
+     </button>
+    </li>
+    <li>
+     <button data-track-id="21474836471" data-track-title="AI Samurai - Price" data-track-url="mp3/Price.mp3">
+      AI Samurai - The Price
+     </button>
+    </li>
+    <li>
+     <button data-track-id="21474836472" data-track-title="AI Samurai - Zero Tolerance" data-track-url="mp3/ZeroTolerance.mp3">
+      AI Samurai - Zero Tolerance
+     </button>
+    </li>
+    <li>
+     <button data-track-id="14067272813" data-track-title="AI Samurai - Isis" data-track-url="mp3/Isis.mp3">
+      AI Samurai - Isis
+     </button>
+    </li>
+    <li>
+     <button data-track-id="12422032604" data-track-title="AI Samurai - Reflections" data-track-url="mp3/Reflections.mp3">
+      AI Samurai - Reflections
+     </button>
+    </li>
+   </ul>
+  </div>
+  <header class="video-section">
+   <video autoplay="" id="video-elem" loop="loop" muted="muted" poster="css/style.css" preload="auto">
+    <source src="video/evadragon.mp4" type="video/mp4"/>
+    video not supported
+   </video>
+   <div class="video-overlay">
+    <div class="container topheader">
+     <div class="row">
+      <div class="col-xs-12 col-md-12 text-center">
+       <h1>
+        <a href="#">
+         AI Samurai
+        </a>
+       </h1>
+       <h2>
+        Искусственный интеллект, который работает на ваш бизнес
+       </h2>
+      </div>
+      <div class="col-xs-12 col-md-12 text-center">
+       <button class="btn btn-lg btn-danger buttoncolor" data-target="#myModal" data-toggle="modal" type="button">
+        написать
+       </button>
+      </div>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div id="ajaxContainer">
+   <section>
+    <div class="container aboutheader">
+     <div class="row">
+      <div class="col-sm-6">
+       <h2 class="section-heading">
+        О нас
+       </h2>
+       <p class="lead">
+        <strong>AI Samurai</strong> - создаём умные AI-решения, внедряем чат-ботов и автоматизируем бизнес-процессы. Ваш партнёр для развития в мире искусственного интеллекта.
+       </p>
+       <p>
+        Мы делаем технологии будущего доступными. Обучаем нейросетям и автоматизации на практических курсах, превращая сложные инструменты в простые и рабочие решения.
+       </p>
+       <a class="btn btn-lg btn-danger center-block" data-content="And here's some amazing content. It's very engaging. Right?" data-toggle="popover" data-trigger="focus" role="button" tabindex="0" title="Work to Order">
+        К РАБОТАМ
+       </a>
+      </div>
+      <div class="col-sm-6">
+       <img alt="aboutimg" src="img/about.jpg" width="600"/>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section>
+    <div class="container">
+     <div class="row">
+      <div class="col-sm-12 text-center">
+       <div class="partner-logo">
+        <a href="https://n8n.io/" target="_blank">
+         <img alt="NBC" class="img-responsive2" src="img/clients/logo1.png"/>
+        </a>
+       </div>
+       <div class="partner-logo">
+        <a href="https://www.python.org/" target="_blank">
+         <img alt="Universal" class="img-responsive2" src="img/clients/logo2.png"/>
+        </a>
+       </div>
+       <div class="partner-logo">
+        <a href="https://www.docker.com/" target="_blank">
+         <img alt="Ducati" class="img-responsive2" src="img/clients/logo3.png"/>
+        </a>
+       </div>
+       <div class="partner-logo">
+        <a href="https://beget.com/ru" target="_blank">
+         <img alt="Machinima" class="img-responsive2" src="img/clients/logo4.png"/>
+        </a>
+       </div>
+       <div class="partner-logo">
+        <a href="https://my.telegram.org/auth" target="_blank">
+         <img alt="Intel" class="img-responsive2" src="img/clients/logo5.png"/>
+        </a>
+       </div>
+      </div>
+     </div>
+     <div class="row">
+      <div class="col-sm-12 text-center">
+       <h3 style="font-size: 20px; letter-spacing: 16px; padding-top: 0;">
+        наша база
+       </h3>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="container middle_top text-center">
+    <div class="row">
+     <div class="col-md-12">
+      <div>
+       <h2>
+        Наши услуги
+       </h2>
+       <p class="center-block">
+        Мы собрали всё необходимое в мире AI и веб-технологий. Теперь это доступно и для вас.
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="parallax-section" id="services" style="background-position: 50% -20px;">
+    <div class="container">
+     <div class="row">
+      <div class="col-sm-12">
+       <div class="our-service">
+        <div class="services row">
+         <div class="col-sm-4">
+          <div class="single-service">
+           <i class="fa fa-cogs">
+           </i>
+           <h2>
+            Создание уникальных AI-решений
+           </h2>
+           <p>
+            Разрабатываем интеллектуальные алгоритмы для обработки данных, автоматизации и решения задач.
+          </p>
+          </div>
+         </div>
+         <div class="col-sm-4">
+          <div class="single-service">
+           <i class="fa fa-comments">
+           </i>
+           <h2>
+            Разработка чат-ботов и AI-помощников
+           </h2>
+           <p>
+            Создаем умные чат-боты и AI-ассистенты которые будут работать на вас и в вашем бизнесе.
+          </div>
+         </div>
+         <div class="col-sm-4">
+          <div class="single-service">
+           <i class="fa fa-graduation-cap" href="">
+           </i>
+           <h2>
+            Обучение автоматизации
+           </h2>
+           <p>
+            Вступай в наше Telegram-сообщество и узнай всё необходимноедля автоматизации твоего бизнеса.
+          </p>
+          </div>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <!--/#service-->
+   <section class="container text-center" id="catalogtext">
+    <div class="row">
+     <div class="col-xs-12 col-md-12 amazing">
+      <h3>
+       ТОВАРЫ
+      </h3>
+      <h5>
+        кликай для просмотра
+      </h5>
+     </div>
+    </div>
+   </section>
+   <section class="container" id="catalog-page">
+    <div class="container">
+     <div class="row">
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 cover">
+       <div class="flipper" style="width: 263px; height: 263px; font-size: 13.0846px; perspective: 1052px; position: relative;">
+        <div class="front">
+         <img alt="img" class="img-responsive" src="img2/eclipse.jpg" style="backface-visibility: hidden;"/>
+        </div>
+        <div class="back">
+         <div class="icon text-center" style="backface-visibility: hidden;">
+          <a href="https://t.me/ai_samurai_studio" style="backface-visibility: hidden;" target="_blank">
+           <img alt="envato" src="img/logo-envato-icon.png" style="backface-visibility: hidden;"/>
+          </a>
+          <a href="https://t.me/ai_samurai_studio" style="backface-visibility: hidden;" target="_blank">
+          </a>
+          <a href="#" target="_blank">
+           <i class="fa fa-youtube-square fa-3x" data-youtube="a8E8aAN8axE" style="backface-visibility: hidden;">
+           </i>
+          </a>
+          <a href="https://www.youtube.com/@ai.samurai.studio" style="backface-visibility: hidden;" target="_blank">
+           <h2 style="backface-visibility: hidden;">
+            EVA DRAGON
+           </h2>
+           <p style="backface-visibility: hidden;">
+            Продвинутый бот, ведущий три группы в телеграм, отправлящий новости в закрытый канал и получающий ответы от пользователей.
+           </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 cover">
+       <div class="flipper" style="width: 263px; height: 263px; font-size: 13.0846px; perspective: 1052px; position: relative;">
+        <div class="front">
+         <img alt="img" class="img-responsive" src="img2/ageofhonor.jpg" style="backface-visibility: hidden;"/>
+        </div>
+        <div class="back">
+         <div class="icon text-center" style="backface-visibility: hidden;">
+          <a href="https://t.me/ai_samurai_studio" style="backface-visibility: hidden;" target="_blank">
+           <img alt="envato" src="img/logo-envato-icon.png" style="backface-visibility: hidden;"/>
+          </a>
+          <a href="https://t.me/ai_samurai_studio" style="backface-visibility: hidden;" target="_blank">
+          </a>
+          <a href="#" target="_blank">
+           <i class="fa fa-youtube-square fa-3x" data-youtube="a8E8aAN8axE" style="backface-visibility: hidden;">
+           </i>
+          </a>
+          <a href="https://www.youtube.com/@ai.samurai.studio" style="backface-visibility: hidden;" target="_blank">
+            <h2 style="backface-visibility: hidden;">
+              EVA DRAGON
+             </h2>
+             <p style="backface-visibility: hidden;">
+              Продвинутый бот, ведущий три группы в телеграм, отправлящий новости в закрытый канал и получающий ответы от пользователей.
+             </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 cover">
+       <div class="flipper" style="width: 263px; height: 263px; font-size: 13.0846px; perspective: 1052px; position: relative;">
+        <div class="front">
+         <img alt="img" class="img-responsive" src="img2/heronation.jpg" style="backface-visibility: hidden;"/>
+        </div>
+        <div class="back">
+         <div class="icon text-center" style="backface-visibility: hidden;">
+          <a href="https://t.me/ai_samurai_studio" style="backface-visibility: hidden;" target="_blank">
+           <img alt="envato" src="img/logo-envato-icon.png" style="backface-visibility: hidden;"/>
+          </a>
+          <a href="https://t.me/ai_samurai_studio" style="backface-visibility: hidden;" target="_blank">
+          </a>
+          <a href="#" target="_blank">
+           <i class="fa fa-youtube-square fa-3x" data-youtube="a8E8aAN8axE" style="backface-visibility: hidden;">
+           </i>
+          </a>
+          <a href="https://www.youtube.com/@ai.samurai.studio" style="backface-visibility: hidden;" target="_blank">
+            <h2 style="backface-visibility: hidden;">
+              EVA DRAGON
+             </h2>
+             <p style="backface-visibility: hidden;">
+              Продвинутый бот, ведущий три группы в телеграм, отправлящий новости в закрытый канал и получающий ответы от пользователей.
+             </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+      <div class="col-xs-6 col-sm-6 col-md-4 col-lg-3 cover">
+       <div class="flipper" style="width: 263px; height: 263px; font-size: 13.0846px; perspective: 1052px; position: relative;">
+        <div class="front">
+         <img alt="img" class="img-responsive" src="img2/gravity.jpg" style="backface-visibility: hidden;"/>
+        </div>
+        <div class="back">
+         <div class="icon text-center" style="backface-visibility: hidden;">
+          <a href="" style="backface-visibility: hidden;" target="_blank">
+           <img alt="envato" src="img/logo-envato-icon.png" style="backface-visibility: hidden;"/>
+          </a>
+          <a href="https://www.youtube.com/@ai.samurai.studio" style="backface-visibility: hidden;" target="_blank">
+          </a>
+          <a href="#" target="_blank">
+           <i class="fa fa-youtube-square fa-3x" data-youtube="a8E8aAN8axE" style="backface-visibility: hidden;">
+           </i>
+          </a>
+          <a href="" style="backface-visibility: hidden;" target="_blank">
+            <h2 style="backface-visibility: hidden;">
+              EVA DRAGON
+             </h2>
+             <p style="backface-visibility: hidden;">
+              Продвинутый бот, ведущий три группы в телеграм, отправлящий новости в закрытый канал и получающий ответы от пользователей.
+             </p>
+          </a>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+  </div>
+  
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  
+  
+  <section id="carousel">
+   
+   
+    </nav>
+   </div>
+   
+   <section class="caruselsec">
+    <div class="container text-center">
+     <div class="row">
+      <div class="col-xs-12 col-md-12 amazing">
+       <h3>
+        Лучшие работы
+       </h3>
+      </div>
+      <div class="col-xs-12 col-md-12 chasing">
+       <div class="slideshow-container">
+        <div class="mySlides fade">
+         <a href="" target="_blank">
+          <img alt="img" src="img/carusel1.jpg" style="width:60%"/>
+         </a>
+        </div>
+        <div class="mySlides fade">
+         <a href="" target="_blank">
+          <img alt="img" src="img/carusel2.jpg" style="width:60%"/>
+         </a>
+        </div>
+        <div class="mySlides fade">
+         <a href="" target="_blank">
+          <img alt="img" src="img/carusel3.jpg" style="width:60%"/>
+         </a>
+        </div>
+       </div>
+       <br/>
+       <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)">
+        </span>
+        <span class="dot" onclick="currentSlide(2)">
+        </span>
+        <span class="dot" onclick="currentSlide(3)">
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="container middle_top text-center">
+    <div class="row">
+     <div class="col-xs-12 col-sm-4 col-md-4 margin_bottom">
+      <div>
+       <div class="foto" style="background-image: url('img2/gravity.jpg');">
+       </div>
+       <h3>
+        EVA DRAGON
+       </h3>
+       <p>
+        Бот ассистент
+       </p>
+       <p>
+        Бот для продвинутого ведения телеграм каналов
+       </p>
+       <a class="btn" download="" href="">
+        Посмотреть
+       </a>
+      </div>
+     </div>
+     <div class="col-xs-12 col-sm-4 col-md-4 margin_bottom">
+      <div>
+       <div class="foto" style="background-image: url('img2/gravity.jpg');"></div>
+       <h3>
+        EVA DRAGON
+       </h3>
+       <p>
+        Бот ассистент
+       </p>
+       <p>
+        Бот для продвинутого ведения телеграм каналов
+       </p>
+       <a class="btn" download="" href="">
+        Preview
+       </a>
+      </div>
+     </div>
+     <div class="col-xs-12 col-sm-4 col-md-4 margin_bottom">
+      <div>
+       <div class="foto" style="background-image: url('img2/gravity.jpg');">
+       </div>
+       <h3>
+        EVA DRAGON
+       </h3>
+       <p>
+        Бот ассистент
+       </p>
+       <p>
+        Бот для продвинутого ведения телеграм каналов
+       </p>
+       <a class="btn" download="" href="">
+        Preview
+       </a>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="container middle_top text-center">
+    <div class="row">
+     <div class="col-md-12">
+      <div>
+       <h2>
+        Заглушка
+       </h2>
+       <p class="center-block">
+        Заглушка
+       </p>
+      </div>
+     </div>
+    </div>
+   </section>
+   
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   
+   
+  </section>
+  <section id="watch">
+   
+   
+    </nav>
+   </div>
+   
+   <div id="pjax-container">
+    <section class="container middle_top text-center">
+     <div class="row">
+      <div class="col-md-12 text-center">
+       <h2>
+        Заглушка
+       </h2>
+      </div>
+     </div>
+    </section>
+    <section class="no-padding" id="portfolio">
+     <div class="container">
+      <div class="row no-gutter popup-gallery">
+       <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="">
+         <div class="imgoverflow">
+          <img alt="" class="img-responsive" src="img/portfolio/thumbnails/1.jpg"/>
+         </div>
+         <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+           <div class="project-category text-faded">
+            <h2>
+             BOT
+            </h2>
+           </div>
+           <div class="project-name">
+            <h3>
+             EVA DRAGON
+            </h3>
+           </div>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
+         <div class="imgoverflow">
+          <img alt="" class="img-responsive" src="img/portfolio/thumbnails/2.jpg"/>
+         </div>
+         <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+           <div class="project-category text-faded">
+            BOT
+           </div>
+           <div class="project-name">
+            EVA DRAGON
+           </div>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
+         <div class="imgoverflow">
+          <img alt="" class="img-responsive" src="img/portfolio/thumbnails/3.jpg"/>
+         </div>
+         <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+           <div class="project-category text-faded">
+            BOT
+           </div>
+           <div class="project-name">
+            EVA DRAGON
+           </div>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="">
+         <div class="imgoverflow">
+          <img alt="" class="img-responsive" src=""/>
+         </div>
+         <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+           <div class="project-category text-faded">
+            BOT
+           </div>
+           <div class="project-name">
+            EVA DRAGON
+           </div>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="">
+         <div class="imgoverflow">
+          <img alt="" class="img-responsive" src=""/>
+         </div>
+         <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+           <div class="project-category text-faded">
+            BOT
+           </div>
+           <div class="project-name">
+            EVA DRAGON
+           </div>
+          </div>
+         </div>
+        </a>
+       </div>
+       <div class="col-lg-4 col-sm-6">
+        <a class="portfolio-box" href="">
+         <div class="imgoverflow">
+          <img alt="" class="img-responsive" src=""/>
+         </div>
+         <div class="portfolio-box-caption">
+          <div class="portfolio-box-caption-content">
+           <div class="project-category text-faded">
+            BOT
+           </div>
+           <div class="project-name">
+            EVA DRAGON
+           </div>
+          </div>
+         </div>
+        </a>
+       </div>
+      </div>
+     </div>
+    </section>
+   </div>
+   
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
+   <!-- Include all compiled plugins (below), or include individual files as needed -->
+   
+   
+  </section>
+   <!-- Scripts -->
+  <script src="js/jquery.js" defer></script>  
+  <script src="js/jquery.flip.min.js" defer></script>  
+  <script src="js/bootstrap.js" defer></script>  
+  <script src="js/script.js" defer></script>
+  <script src="js/player-hover.js" defer></script>
+  <footer>
+    <div class="video-overlay-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-12 text-center">
+            <div class="footercont">
+              <p><strong>AI SAMURAI</strong></p>
+              <p class="maria">Обращайтесь в любое время. 
+                Откройте для себя бесконечные возможности. Добейтесь быстрее и мощнее большего, чем когда-либо прежде, вместе с <strong>AI Samurai</strong></p>
+              <p style="font-size: 13px;">Дизайн <strong>AI SAMURAI</strong> 
+              <img src="img/ai_logo.png" alt="ai_logo" style="width: 20px;"/></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contacts" class="col-md-12 text-center">
+        <div class="soc_buttons">
+          <a href="https://t.me/ai_samurai_studio" target="_blank"><i class="fa fa-paper-plane"></i></a>
+          <a href="https://www.youtube.com/@ai.samurai.studio" target="_blank"><i class="fa fa-youtube-play"></i></a>
+          <a href="https://vk.com/ai_samurai_studio?from=groups" target="_blank"><i class="fa fa-vk"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
