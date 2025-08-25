@@ -13,6 +13,11 @@
    11 LISTEN
 ================================ */
 
+/* Smooth scrolling for anchor links */
+html {
+  scroll-behavior: smooth;
+}
+
 /*MAIN CSS*/
 
 .aboutheader {padding-top: 80px;}
